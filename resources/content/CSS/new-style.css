@@ -1,0 +1,390 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+html {
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 1);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+/* header and Nav */
+
+.header-container {
+    width: 100%;
+    max-height: 5.4rem;
+    background-color: white;
+    border-bottom: 0.6rem solid rgb(240, 113, 39);
+    position: fixed;
+    display: flex;
+    z-index: 100;
+}
+.logo {
+    display: inline-flex;
+    height: 70px;
+    width: 70px;
+    padding-top: 0.3rem;
+    margin-left: 0.5rem;
+}
+nav {
+    color: black;
+    display: inline-flex;
+    align-content: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+}
+li {
+    display: inline-flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-inline: 2rem;
+    color: rgba(0, 0, 0, 1);
+}
+a {
+    text-decoration: none;
+}
+a::before {
+    color: rgba(0, 0, 0, 1);
+}
+a::after {
+    color: rgba(0, 0, 0, 1);
+}
+a:visited {
+    color: rgba(0, 0, 0, 1);
+}
+@media only screen and (max-width: 740px) {
+
+    li {
+        font-size: 1.3rem;
+        display: block;
+        justify-content: flex-end;
+        flex-direction: column;
+        text-align: right;
+    }
+    .header-container {
+        height: auto;
+    }
+    a::before {
+        color: rgba(0, 0, 0, 1);
+    }
+    a::after {
+        color: rgba(0, 0, 0, 1);
+    }
+    a:visited {
+        color: rgba(0, 0, 0, 1);
+    }
+}
+
+
+/* 1st section */
+
+.a {
+    background-image: url('../background-picture-aeroplane.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    display: flex;
+    z-index: 1;
+    padding-top: 5rem;
+}
+
+.section-a-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    width: 100%;
+    text-align: center;
+    line-height: 3rem;
+    z-index: 1;
+    margin-top: 2rem;
+    
+}
+.section-a-header h2 {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+.section-a-header h3 {
+    font-size: 2rem;
+}
+.box-container {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-block: 10%;
+}
+.box {
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    flex-shrink: 1;
+}
+.box:hover {
+    transform: scale(1.3);
+}
+.box h3:hover {
+    transform: scale(1.2);
+}
+.box h3 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    color: rgb(240, 113, 39);
+    z-index: 2;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+@media only screen and (max-width: 1025px) {
+    .box:hover {
+        transform: none;
+    }
+    .box h3:hover {
+        transform: none;
+    }
+    .section-a-header {
+        line-height: 3.8rem;
+    }
+}
+
+/* About us section */
+.black {
+    background-color: rgba(0, 0, 0, 1);
+    margin: 5% 15% 10% 15%
+
+}
+.black h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+.black p {
+    /* margin: 10% 15%; */
+    text-align: center;
+    line-height: 1.7rem;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    color: rgba(233, 224, 224, 0.9);
+}
+
+/* Meet the team */
+
+.b {
+    background-image: url('../truck-delivery.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    display: flex;
+    z-index: 1;
+    padding-bottom: 100px;
+}
+
+.section-b-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: rgba(0, 0, 0, 1);
+    width: 100%;
+    text-align: center;
+    line-height: 3rem;
+    z-index: 1;
+    margin-top: 2rem;
+    
+}
+.section-b-header h2 {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+/* .team-container {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-block: 10%;
+}
+.team-a {
+    background-image: url(../woman-delivery-driver.jpg);
+    display: block;
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    border-radius: 50%;
+}
+.team-b {
+    background-image: url(../happy\ man\ with\ package.jpg);
+    display: block;
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    border-radius: 50%;
+}
+.team-c {
+    background-image: url(../thumbs\ up.jpg);
+    display: block;
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    border-radius: 50%;
+}
+.about {
+    display: flex;
+} */
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.team-a img,
+.team-b img,
+.team-c img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+}
+.about {
+    display: block;
+    color: rgba(240, 113, 39, 1);
+    font-size: 2rem;
+    font-weight: 800;
+}
+@media only screen and (max-width: 840px) {
+    .team-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .team-a img,
+    .team-b img,
+    .team-c img {
+        padding-block: 50px;
+    }
+}
+
+/* delivery icons */
+.black-icons {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 10% 15%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.icon-container {
+    display: contents;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-inline: auto;
+}
+.icon {
+    display: block;
+    width: 140px;
+    height: auto;
+    margin-inline: 50px;
+}
+.icon img {
+    display: flex;
+    justify-items: center;
+    width: 140px;
+    flex-wrap: wrap;
+}
+
+.icon h3 {
+    width: 150px;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    line-height: 2rem;
+}
+
+@media only screen and (max-width: 1050px) {
+    .icon {
+        padding-block: 25px;
+    }
+}
+
+
+/* third section price list */
+.c {
+    background-image: url('../ship\ background\ pic.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 1;
+    padding-block: 50px;
+}
+.price-list {
+    margin: auto;
+    margin-block: 50px;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5%;
+    color: rgba(233, 224, 224, 1);
+}
+
+.price-list h3 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1.2rem;
+}
+table {
+    text-align: center;
+    flex-shrink: 3;
+    flex-grow: 2;
+    flex-basis: auto;
+}
+.orange {
+    color:rgba(240, 113, 39, 1);
+}
+.button {
+    display: flex;
+    height: 50px;
+    width: 150px;
+    background-color: rgba(240, 113, 39, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 5%;
+    margin-inline: auto;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: auto;
+}
+.button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(240, 113, 39, 1);
+    border: 1px solid rgba(240, 113, 39, 1);
+}
+@media only screen and (max-width: 740px) {
+    .price-list {
+        width: 300px;
+        height: auto;
+    }
+}
+
+/* Footer */
+footer {
+    padding-block: 10px;
+}
