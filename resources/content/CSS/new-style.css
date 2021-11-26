@@ -67,6 +67,12 @@ a:visited {
     .header-container {
         height: auto;
     }
+    a::before {
+        color: rgba(0, 0, 0, 1);
+    }
+    a::after {
+        color: rgba(0, 0, 0, 1);
+    }
     a:visited {
         color: rgba(0, 0, 0, 1);
     }
