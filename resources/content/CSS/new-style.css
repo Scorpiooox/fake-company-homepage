@@ -68,7 +68,8 @@ a:visited {
         height: auto;
     }
     a {
-    text-decoration: none;
+        text-decoration: none;
+        color: black;
     }
     a::before {
         color: rgba(0, 0, 0, 1);
@@ -257,7 +258,8 @@ a:visited {
     width: 250px;
     height: auto;
     border-radius: 50%;
-    display: block;
+    align-content: center;
+    justify-content: center;
 }
 .about {
     display: block;
