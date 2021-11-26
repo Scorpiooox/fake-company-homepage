@@ -67,6 +67,9 @@ a:visited {
     .header-container {
         height: auto;
     }
+    a {
+    text-decoration: none;
+    }
     a::before {
         color: rgba(0, 0, 0, 1);
     }
